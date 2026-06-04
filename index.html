@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amelia Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span>Sandhya E</span>
+            </div>
+
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#Certificates">Certificates</a>
+                <a href="#contact" class="contact-btn">Contact</a>
+            </div>
+
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+
+        <div class="dropdown">
+            <div class="dropdown-links">
+                <a href="#home" onclick="cancel()">Home</a>
+                <a href="#about" onclick="cancel()">About</a>
+                <a href="#skills" onclick="cancel()">Skills</a>
+                <a href="#services" onclick="cancel()">Services</a>
+                <a href="#blogs" onclick="cancel()">Blogs</a>
+                <a href="#contact" onclick="cancel()">Contact</a>
+
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+        <div class="main-container">
+
+          
+       <div class="image">
+          <img src="c:\Users\Preran\OneDrive\Documents\All  personal documents\photo.jpg" alt="Sandhya E">
+       </div>
+
+
+
+            <div class="content">
+                <h1>Hey I'm <span>Sandhya E</span></h1>
+
+                <div class="typewriter">
+                    I'm a <span>student</span>
+                </div>
+
+                <p>
+                    Welcome to my portfolio! I'm glad you're here. Explore my work, skills, and projects to learn more about my journey in technology and web development. Thank you for visiting, and I hope you enjoy exploring my website.
+ 
+                </p>
+
+            <div class="social-links">
+                <a href="https://github.com/sandhyagowda504/personal-home-page--sandhya-E.git" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                 </a>
+
+               <a href="https://facebook.com/sandhyae" target="_blank">
+                 <i class="fa-brands fa-facebook"></i>
+                 </a>
+
+                 <a href="https://www.linkedin.com/in/sandhya-e-242988301" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+                 </a>
+                </div>
+     
+                <div class="btn">
+                   <a href="c:\Users\Preran\OneDrive\Documents\resumes\SANDHYA .E.pdf">
+                <button>Download CV</button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+           Hello! I'm Sandhya E, a BCA graduate from Soundarya Institute of Management and Science. I am passionate about technology, web development, and software development. I enjoy learning new skills, building creative projects, and solving problems through technology.
+
+I have a strong interest in creating responsive and user-friendly websites and continuously improving my technical knowledge. I am a dedicated and enthusiastic learner who enjoys working in team environments and taking on new challenges. My goal is to build a successful career in the IT industry while contributing to innovative and impactful projects.
+
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <h3>Technical Skills</h3>
+        <p>HTML5 | CSS3 | JavaScript | Bootstrap | Java | Python | SQL | GitHub | MS Excel</p>
+        <h3>Soft Skills</h3>
+        <p>Communication | Teamwork | Problem Solving | Adaptability | Time Management</p>
+    </section>
+
+    <!-- Services -->
+    <section id="Certificates">
+        <h2>Certificates</h2>
+        <p>Elemenatary data structure.</p>
+        <p>Introduction to mongodb</p>
+        <p>Data analytics A-Z with python</p>
+        <p>Data analytics with python – Udemy</p>
+        <p>Drone Aerospace Workshop -Garuda Aerospace</p>
+        <p>Full-Stack Web Development Java– Campe Gemini</p>
+        <p>Data analytics essential -Cisco networking academy</p>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: sandhyagowda504@gmailcom</p>
+        <p>Phone: +91 9743661177</p>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+
+        function hamburg() {
+            document.querySelector(".dropdown").style.transform =
+            "translateY(0)";
+        }
+
+        function cancel() {
+            document.querySelector(".dropdown").style.transform =
+            "translateY(-500px)";
+        }
+    </script>
+
+</body>
+</html>
